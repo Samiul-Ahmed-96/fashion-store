@@ -3,6 +3,7 @@ const loadProducts = () => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => showProducts(data));
+
 };
 loadProducts();
 
