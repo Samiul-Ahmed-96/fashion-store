@@ -1,6 +1,16 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.top-heading {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #444;
 }
 .search-box {
   width: 300px;
@@ -31,6 +41,7 @@ button#search-btn {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  background: #f1f1f1;
 }
 .single-product {
   padding: 10px;
@@ -39,12 +50,16 @@ button#search-btn {
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid rgb(126, 126, 126);
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+.product {
+  margin: 20px 0px;
+}
+
 .cart {
   width: 350px;
   /* border: 1px solid green; */
