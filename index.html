@@ -8,17 +8,18 @@
   <title>Fashion-Store</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
-  <h5></h5>
+  <!-- header-start -->
   <header>
     <h1 class="top-heading">Welcome to Fashion Store</h1>
   </header>
+  <!-- header-end -->
   <main class="main">
+    <!-- search-bar - start -->
     <section class="search-bar">
       <div class="search-field">
         <div class="search-box">
@@ -30,10 +31,12 @@
         </div>
       </div>
     </section>
-
+    <!-- search-bar - end -->
+    <!-- Main-container-start -->
     <section class="main-productss">
       <div class="row">
         <div class="col-md-9 col-lg-9 col-sm-3">
+          <!-- display all the products -->
           <div id="all-products" class="">
           </div>
         </div>
@@ -41,6 +44,7 @@
           <div class="cart" id="my-cart">
             <table class="table">
               <thead>
+                <!-- display cart -->
                 <h1>My-Cart</h1>
                 <tr>
                   <th scope="col"></th>
@@ -51,30 +55,35 @@
               </thead>
               <tbody>
                 <tr>
+                  <!-- total-product-count -->
                   <th>Total Added-Products:</th>
                   <td><span id="total-Products">0</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
+                  <!-- total-product-price -->
                   <th>Price:</th>
                   <td>$ <span id="price">0</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
+                  <!-- total-product-delivery charge -->
                   <th>Delivery-Charge:</th>
                   <td>$ <span id="delivery-charge">20</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
+                  <!-- total-product-tax count -->
                   <th>Total-Tax:</th>
                   <td>$ <span id="total-tax">0</span></td>
                   <td></td>
                   <td></td>
                 </tr>
                 <tr>
+                  <!-- Grand total -->
                   <th scope="row">Total</th>
                   <td colspan="2">$ <span id="total">0</span></td>
                   <td></td>
@@ -82,17 +91,14 @@
               </tbody>
             </table>
             <div class="parces text-center">
-              <button class="btn btn-primary text-center">Buy Now</button>
+              <button class="btn btn-primary text-center fw-bold">Buy Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Main-container-start -->
   </main>
-  <footer>
-
-  </footer>
-
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
 </body>
