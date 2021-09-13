@@ -31,7 +31,6 @@ const showProducts = (products) => {
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
-  // const newPrice = price.toFixed(2);
   updatePrice("price",price);
   updateTaxAndCharge();
   updateTotal();
@@ -48,7 +47,7 @@ const getInputValue = (id) => {
 const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
-  const total = convertedOldPrice + convertPrice;
+  const total = (convertedOldPrice + convertPrice).toFixed(2);
   document.getElementById(id).innerText =(total);
 };
 
